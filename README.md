@@ -11,4 +11,4 @@
 Тетяна Поліщук | tania833 | tania.polischuk1998@gmail.com
 Белко Евгений |+380956811993|belkoevgeniy777@gmail.com|
 Антон Демидов |+380635893715|antonyo0182@gmail.com|
-
+Яворская Юлия|+380969808049|yyavorskaia@gmail.com|
