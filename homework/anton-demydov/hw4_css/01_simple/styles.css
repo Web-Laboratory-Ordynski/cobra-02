@@ -1,0 +1,48 @@
+body {
+    width: 800px;
+    margin: auto;
+    font-size: 18px;
+    padding: 30px 0 30px 8px;
+}
+
+header {
+    background-color: #C02535;
+}
+
+h1 {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: center;
+}
+
+article {
+    padding-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+span {
+    color: #0000ff;
+}
+
+#banner {
+    width: 100%;
+}
+
+.images {
+    text-align: center;
+}
+
+.images img {
+    border: 3px #000 dashed;
+    margin: 2px;
+}
+
+footer {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+}
