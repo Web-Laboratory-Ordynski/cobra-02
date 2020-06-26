@@ -178,18 +178,19 @@ img {
   top: 0;
   right: -8px;
 }
-.site-list__btn {
+.content__btn {
   padding-top: 23px;
   padding-bottom: 23px;
   font-size: 26px;
   text-align: center;
   color: #eb7e78;
   background-color: #4a4f56;
+  border: 1px solid green;
 }
-.site-list__btn:hover {
+.content__btn:hover {
   background-color: #625e77;
 }
-.site-list__btn:active,
-.site-list__btn:focus {
+.content__btn:active,
+.content__btn:focus {
   background-color: grey;
 }
