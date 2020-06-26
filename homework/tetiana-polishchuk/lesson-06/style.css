@@ -1,0 +1,79 @@
+body{
+    max-width: 1200px;
+}
+.flexible{
+    display:flex;
+    flex-direction: row;
+    
+}
+.circle1 {
+    width: 67px;
+    height: 66px;
+    border: 1px solid #1275B9;
+    background-color: #1275B9;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 60px;
+    margin: auto;
+    
+  }
+  .circle2{
+   background-color: #1275B9; 
+    width: 67px;
+    height: 66px;
+    border: 1px solid #1275B9;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 60px;
+    margin: auto;
+  }
+  img,
+  svg {  
+    vertical-align: middle;   
+    width: 26px;
+    height: 33px;
+    left: 97px;
+    top: 17px;
+}
+
+.circle1:hover {
+    background-color: white;
+    border-color: #2a69a6;
+}
+
+.circle1:hover .icon1{  
+    fill:#1275B9;
+}
+.mainParagraphs{
+    /* Style for "Responsive" */
+height: 24px;
+color: #000000;
+font-family: "Proxima Nova Rg";
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 0.35px;
+line-height: 24px;
+text-transform: uppercase;
+text-align: center;
+
+}
+.notMainParagraphs{
+    width: 250px;
+    height: 56px;
+    color: #9d9d9d;
+    font-family: "Proxima Nova Lt";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.35px;
+    line-height: 20px;
+    text-align: center;
+}
+.main-section{
+    margin: 50px auto;
+
+}
+.icon1{
+    fill: white;
+}
