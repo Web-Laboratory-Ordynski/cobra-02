@@ -62,7 +62,7 @@ li{
     height: 420px;
     background-color: #f7f7f7;
     width:25%;
-
+    overflow: hidden;
 }
 .icons{
     display: block;
@@ -96,7 +96,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 22px;
 margin: auto;
-padding: 15px;
+padding-top: 15px;
 text-align: center;
 }
 
