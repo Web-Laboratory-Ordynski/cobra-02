@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #b30202;
+    width: 950px;
+    margin: auto;
+    font-size: 18px;
+    padding: 30px 0 30px 8px;
+}
+
+header {
+    background-color: #000000;
+}
+
+h1 {
+    text-align: center;
+    background-color: #b30202;
+}
+
+menu ul {
+    width: 100%;
+}
+
+menu li {
+    display: inline-block;
+    margin: 20px 42px 7px;
+}
+
+menu a {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+}
+
+menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+menu span {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+menu img {
+    width: 150px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+
+main>aside {
+    display: inline-block;
+    width: 150px;
+    background-color: #eae3e3;
+    vertical-align: top;
+}
+
+article {
+    display: inline-block;
+    width: 795px;
+    vertical-align: top;
+}
+
+article>aside {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    background-color: #930202;
+    min-height: 300px;
+}
+
+nav li {
+    color: #ffa500;
+    list-style: none;
+    text-decoration: underline;
+    padding-bottom: 20px;
+    padding-left: 2px;
+}
+
+nav li a {
+    color: #ffa500;
+}
+
+nav li:hover, nav li:hover a {
+    text-decoration: none;
+}
+
+section {
+    display: inline-block;
+    max-width: 575px;
+    color: #ffffff;
+    padding: 20px 5px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.title {
+    background-color: #bebebe;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.aside {
+    padding: 10px 1px 18px;
+}
+
+.aside::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 1px;
+    margin: auto;
+    background-color: #bebebe;
+}
+
+footer {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #ff5a00;
+    text-align: center;
+}
