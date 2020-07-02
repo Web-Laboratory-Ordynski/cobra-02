@@ -1,0 +1,152 @@
+body {
+    background-color: #b07cf7;
+}
+
+h1 {
+    /* Style for "Blog" */
+    color: #ffffff;
+    font-family: "Raleway - Heavy";
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 25px;
+    margin: 100px auto 60px;
+    text-align: center;
+}
+
+p {
+    /* Style for "Dolore mag" */
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 593px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 25px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    opacity: 0.8;
+}
+
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+.container {
+    margin: 15px;
+    width: 370px;
+    height: 310px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: relative;
+}
+
+.gradient{
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 1.0) 0%, rgba(255, 255, 255, 0) 45%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.img1 {
+    background-image: url(../images/img1.svg);
+}
+.img2 {
+    background-image: url(../images/img2.svg);
+}
+.img3 {
+    background-image: url(../images/img3.svg);
+}
+
+
+
+
+
+.date {
+    width: 60px;
+    height: 60px;
+    border-radius: 10%;
+    background-color: #262626;
+    box-sizing: border-box;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    text-align: center;
+    line-height:15px;
+    background-color: rgb(38,38,38,0.5);
+    padding-top: 7px;
+
+}
+
+.number{
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+
+.month {
+    color: #ffffff;
+    font-family: "Raleway - Heavy";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+
+.text {
+    max-width: 307px;
+    color: #ffffff;
+    font-family: "Raleway - Bold";
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 20px;
+    top:65%;
+    box-sizing: border-box;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.auskteez {
+    font-family: "Raleway - Light";
+    font-size: 13px;
+    font-weight: 300;
+    box-sizing: border-box;
+    position: absolute;
+    left: 31px;
+    bottom: 19px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+
+button {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: #f72b3b;
+    width: 200px;
+    height: 55px;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 40px auto 120px;
+    display:block;
+}
+
+
