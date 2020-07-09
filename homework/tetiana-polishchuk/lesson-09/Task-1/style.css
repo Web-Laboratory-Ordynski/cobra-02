@@ -22,9 +22,8 @@
     src: url('./fonts/Lato-Bold.woff2') format('woff2'), url('./fonts/Lato-Bold.woff') format('woff');
 }
 
-
-body {
-    max-width: 1163px;
+.container {
+    max-width: 1200px;
     margin: 100px auto;
     padding-left: 120px;
     padding-right: 120px;
