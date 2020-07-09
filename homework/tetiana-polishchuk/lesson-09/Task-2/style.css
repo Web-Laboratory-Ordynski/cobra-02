@@ -1,12 +1,12 @@
-html {
+body {
     background-color: #464f54;
 }
 
-body {
+.container {
+    max-width: 1100px;
     margin: 150px auto;
     padding: 200px 100px;
     box-sizing: border-box;
-    max-width: 1116px;
     background-color: white;
 }
 
