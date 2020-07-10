@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+.h1,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h3,
+p {
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    padding: 50px 0;
+}
+
+section {
+    display: block;
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: auto;
+    font-size: 0;
+}
+
+h5 {
+    font-size: 12px;
+    color: #898f99;
+    font-weight: bold;
+    letter-spacing: 3px;
+    width: 75%;
+    margin: 20px auto;
+}
+
+h1 {
+    font-size: 48px;
+    color: #0ec8cb;
+    font-weight: normal;
+    letter-spacing: 4px;
+    width: 75%;
+    margin: 20px auto 30px;
+}
+
+h3 {
+    font-size: 18px;
+    color: #898f99;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 30px;
+    width: 55%;
+    margin: auto;
+}
+
+.blocks {
+    display: inline-block;
+    max-width: 25%;
+    padding: 50px 25px 50px 30px;
+    background: #f7f7f7;
+    min-height: 420px;
+    border-top: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    vertical-align: top;
+    transition: .3s;
+}
+
+.blocks:first-child {
+    border-left: 1px solid #ececec;
+}
+
+.blocks:nth-child(2) .h1 {
+    margin-top: -12px;
+}
+
+.blocks:first-child:hover {
+    border-left: 1px solid #0ec8cb;
+}
+
+.blocks:hover {
+    background-color: #0ec8cb;
+    border-top: 1px solid #0ec8cb;
+    border-right: 1px solid #0ec8cb;
+    border-bottom: 1px solid #0ec8cb;
+    transition: .3s;
+}
+
+figure {
+    height: 70px;
+    margin: 0 auto 50px;
+}
+
+svg {
+    fill: #000000;
+    transition: .3s;
+}
+
+.blocks:hover svg {
+    fill: #ffffff;
+    transition: .3s;
+}
+
+.h1 {
+    text-transform: uppercase;
+    font-size: 21px;
+    margin: 30px auto;
+    transition: .3s;
+}
+
+p {
+    font-size: 14px;
+    transition: .3s;
+}
+
+.blocks:hover .h1,
+.blocks:hover p {
+    color: #ffffff;
+    transition: .3s;
+}
+
+@media (max-width: 930px) {
+    .blocks {
+        max-width: 50%;
+        min-height: 330px;
+    }
+    .blocks:nth-child(2) .h1 {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 599px) {
+    body {
+        padding: 0;
+    }
+    h1 {
+        width: 100%;
+    }
+    h3 {
+        width: 100%;
+    }
+    .blocks {
+        max-width: 100%;
+    }
+    figure {
+        margin: 0 auto;
+    }
+    .blocks:nth-child(2) .h1 {
+        margin-top: 30px;
+    }
+}
