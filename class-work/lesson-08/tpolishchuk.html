@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetiana Polishchuk</title>
+    <style>
+        body {
+            background-color: rgb(236, 236, 217);
+        }
+
+        .rotate3d {
+            position: relative;
+            transform: rotate3d(2, 1, 5, 50deg);
+            background-color: aqua;
+            position: absolute;
+            margin-left: 800px;
+        }
+
+        h2 {
+            font-size: x-large;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: large;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .rotateX {
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h2>transform:rotate3d(x,y,z,угол)</h2>
+        <h3>.rotate3d { <br>
+            transform: rotate3d(2, 1, 5, 50deg);<br>
+            background-color: aqua;<br>
+            position: absolute;<br>
+            margin-left: 800px;<br>
+            }
+        </h3>
+        <p>Функция вращает элемент по часовой стрелке относительно трех осей.<br>
+            Элемент поворачивается под углом, задаваемым последним параметром <br>
+            относительно вектора направления [x,y,z].
+            <br> Отрицательные значения поворачивают элемент против часовой стрелки.</p>
+        <div class="container">
+            <div class="transform  rotate3d">
+                <h4>rotate3d(2, 1, 5, 50deg)</h4>
+            </div>
+        </div>
+        <h2>transform:rotateX(deg)
+        </h2>
+        <h3>.rotateX {<br>
+            transform: rotateX(180deg);<br>
+            }</h3>
+        <p>Функция задает поворот по часовой стрелке под заданным углом относительно оси X.<br>
+            Функция rotateX(180deg) эквивалентна rotate3d(1,0,0,180deg).<br>
+            transform: rotateX(30deg);<br>
+            transform: rotateX(-135deg);</p>
+        <div class="container">
+            <div class="transform  rotateX">
+                <h4>rotateX(180deg)</h4>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
