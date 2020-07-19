@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+    <title>Task-2</title>
+</head>
+
+<body>
+    <div class="container container__wrapper">
+        <div class="content">
+            <div class="content__nav">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#sign" class="nav__link">Sign in</a></li>
+                        <li class="nav__item">
+                            <a href="#join" class="nav__link">Join us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content__form" id="sign">
+                <form action="#" method="GET">
+                    <div class="form__item">
+                        <label class="form__label" for="username">Username</label>
+                        <input class="form__input" type="text" name="username" id="username" minlength="3">
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="password">Password</label>
+                        <input class="form__input" type="password" name="password" id="password" minlength="3">
+                    </div>
+                    <div class="form__item form__item--checkbox">
+                        <input checked type="checkbox" name="signed" id="signed">
+                        <label class="form__label form__label--checkbox" for="signed"> <span
+                                class="form__checkbox">&#10004;</span>
+                            Keep me signed in</label>
+                    </div>
+                    <div class="form__item form__item--submit">
+                        <button class="form__button" type="submit">Sign in</button>
+                    </div>
+                </form>
+            </div>
+            <div class="content__form" id="join">
+                <form action="#" method="GET">
+                    <div class="form__item">
+                        <label class="form__label" for="username2">Username</label>
+                        <input class="form__input" type="text" name="username2" id="username2" minlength="3">
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="password2">Password</label>
+                        <input class="form__input" type="password" name="password2" id="password2" minlength="3">
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="repeat-password">Repeat password</label>
+                        <input class="form__input" type="password" name="repeat-password" id="repeat-password"
+                            minlength="3">
+                    </div>
+                    <div class="form__item form__item--submit">
+                        <button class="form__button" type="submit">Join in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
