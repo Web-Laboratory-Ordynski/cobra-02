@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body {
+            background-color: oldlace;
+        }
+
+        .wrapper {
+            width: 70%;
+            margin: auto;
+            min-height: 2000px;
+        }
+
+        h1 {
+            font-size: 56px;
+        }
+
+        .square {
+            padding: 10px;
+        }
+
+        .absolute {
+            display: flex;
+            margin: auto;
+            position: absolute;
+            background-color: cadetblue;
+            width: 150px;
+            height: 150px;
+            top: 300px;
+            right: 50px;
+            justify-content: center;
+            align-self: center;
+            flex-wrap: wrap;
+            color: #fff;
+        }
+
+        .fix {
+            display: flex;
+            margin: auto;
+            position: fixed;
+            background-color: darkolivegreen;
+            width: 150px;
+            height: 150px;
+            top: 300px;
+            right: 50px;
+            justify-content: center;
+            align-self: center;
+            flex-wrap: wrap;
+            color: #fff;
+        }
+
+        .zix {
+            display: flex;
+            position: absolute;
+            margin: auto;
+            z-index: 10;
+            width: 150px;
+            height: 150px;
+            top: 1100px;
+            right: 50px;
+            justify-content: center;
+            align-self: center;
+            flex-wrap: wrap;
+            background-color: gold;
+
+        }
+
+        .info {
+            color: darkolivegreen;
+            font-size: 26px;
+            justify-content: center;
+        }
+
+        .desc {
+            font-size: 20px;
+            color: darkorchid;
+            margin-bottom: 240px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Позиционирование</h1>
+        <p class="info">position: absolute | fixed</p>
+        <p class="info">Устанавливает способ позиционирования элемента относительно окна браузера или других объектов на
+            веб-странице.</p>
+
+
+        <h2>Position: fixed</h2>
+        <p class="desc">
+            По своему действию это значение близко к absolute, но в отличие от него привязывается к указанной свойствами
+            left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы. Браузер
+            Firefox вообще не отображает полосы прокрутки, если положение элемента задано фиксированным, и оно не
+            помещается целиком в окно браузера. В браузере Opera хотя и показываются полосы прокрутки, но они никак не
+            влияют на позицию элемента.
+        </p>
+
+
+
+        <div class="square absolute">
+            <p>Этот квадрат абсолютно позиционирован</p>
+        </div>
+
+        <h2>Position: absolute</h2>
+        <p class="desc">
+            Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице
+            словно абсолютно позиционированного элемента и нет. Положение элемента задается свойствами left, top, right
+            и bottom, также на положение влияет значение свойства position родительского элемента. Так, если у родителя
+            значение position установлено как static или родителя нет, то отсчет координат ведется от края окна
+            браузера. Если у родителя значение position задано как fixed, relative или absolute, то отсчет координат
+            ведется от края родительского элемента.
+        </p>
+
+
+        <div class="square fix">
+            <p>Этот квадрат фиксированно позиционирован</p>
+        </div>
+
+
+        <h2>Z-index:9999</h2>
+        <p class="desc">
+            Любые позиционированные элементы на веб-странице могут накладываться друг на друга в определенном порядке,
+            имитируя тем самым третье измерение, перпендикулярное экрану. Каждый элемент может находиться как ниже, так
+            и выше других объектов веб-страницы, их размещением по z-оси и управляет z-index. Это свойство работает
+            только для элементов, у которых значение position задано как absolute, fixed или relative.
+        </p>
+
+
+        <div class="square zix">
+            <p>У этого квадрата z-index = 10</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
