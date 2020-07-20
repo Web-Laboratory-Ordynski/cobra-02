@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 15px;
+}
+
+.pagetitle {
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #3c3c3c;
+    margin: 20px auto;
+}
+
+.title:after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 4px;
+    background: #dddbdb;
+    margin: 20px auto 0;
+}
+
+.descr {
+    font-size: 16px;
+    color: #3c3c3c;
+    margin: 40px auto;
+}
+
+.team-block {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.team {
+    display: flex;
+    width: 270px;
+    height: 270px;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+figure {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.img {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+img {
+    width: 100%;
+}
+
+.capture {
+    display: flex;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #00aed9;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100px;
+    transition: .3s;
+}
+
+figure:hover .capture {
+    display: flex;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    margin: 2px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .3);
+}
+
+li:hover a {
+    transform: rotateY(360deg);
+    transition: .7s;
+}
+
+.name {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #282528;
+    margin-bottom: 5px;
+}
+
+.position {
+    font-size: 16px;
+    color: #646464;
+}
+
+@media (max-width: 699px) {
+    .team-block {
+        flex-wrap: wrap;
+    }
+    .team {
+        margin: 0 auto 100px;
+    }
+}

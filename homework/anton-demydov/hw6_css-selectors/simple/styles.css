@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('fonts/ProximaNova-Light.eot');
+    src: local('Proxima Nova Light'), local('ProximaNova-Light'), url('fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'), url('fonts/ProximaNova-Light.woff2') format('woff2'), url('fonts/ProximaNova-Light.woff') format('woff'), url('fonts/ProximaNova-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('fonts/ProximaNova-Regular.eot');
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'), url('fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/ProximaNova-Regular.woff2') format('woff2'), url('fonts/ProximaNova-Regular.woff') format('woff'), url('fonts/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+article,
+div,
+svg {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: baseline;
+}
+
+body {
+    align-items: stretch;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+article {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 200px auto;
+}
+
+.cols {
+    width: 1100px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: auto;
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+h1 {
+    width: 100%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.object {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+.img {
+    width: 65px;
+    height: 65px;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #2a69a6;
+    border: 1px solid #2a69a6;
+    transition: .3s;
+    margin: 10px auto;
+}
+
+svg {
+    margin: 20px auto;
+    transition: .3s;
+}
+
+svg path {
+    fill: #ffffff;
+    transition: .3s;
+}
+
+.img:hover {
+    background: none;
+    transition: .3s;
+}
+
+.img:hover svg path {
+    fill: #2a69a6;
+    transition: .3s;
+}
+
+h3 {
+    width: 100%;
+    font-family: 'Proxima Nova Rg';
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+p {
+    width: 100%;
+    font-family: 'Proxima Nova Lt';
+    font-size: 14px;
+    line-height: 20px;
+    color: #9d9d9d;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
