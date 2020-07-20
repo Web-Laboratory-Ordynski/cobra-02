@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./fonts/Playfairdisplayregular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('./fonts/Lato-Light.woff2') format('woff2'), url('./fonts/Lato-Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('./fonts/Lato-Bold.woff2') format('woff2'), url('./fonts/Lato-Bold.woff') format('woff');
+}
+
+.container {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding-left: 120px;
+    padding-right: 120px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+h1 {
+    width: 268px;
+    height: 56px;
+    padding-top: 100px;
+    font-family: 'Playfair Display';
+    font-size: 42px;
+    font-weight: 400;
+    letter-spacing: -0.21px;
+    text-align: left;
+}
+
+.main-div {
+    width: 1150px;
+    height: 573px;
+    color: #171717;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: -0.09px;
+    line-height: 37.54px;
+}
+
+.mini-div {
+    float: left;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    color: #171717;
+    font-family: 'Playfair Display';
+    font-size: 110px;
+    font-weight: 400;
+    letter-spacing: -0.55px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.quotes {
+    font-size: 66px;
+    letter-spacing: -0.3px;
+    line-height: 44.17px;
+}
+
+.engineer {
+    padding-top: 10px;
+    font-size: 26px;
+    letter-spacing: -0.12px;
+    line-height: 37.54px;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    height: 68px;
+    width: 264px;
+    border: 2px solid #eaa258;
+    color: #eaa258;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: rgb(116, 27, 27);
+    transform: scale(1.2);
+}

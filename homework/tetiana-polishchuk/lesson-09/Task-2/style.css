@@ -1,0 +1,137 @@
+body {
+    background-color: #464f54;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 150px auto;
+    padding: 200px 100px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+header {
+    width: 241px;
+    height: 37px;
+    color: #b4b4b4;
+    font-family: "Proxima Nova Rg";
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 6.72px;
+    text-transform: uppercase;
+}
+
+h1 {
+    width: 785px;
+    height: 137px;
+    color: #2a2a2a;
+    font-family: "Futura PT Heavy";
+    font-size: 78px;
+    font-weight: 800;
+    letter-spacing: 5.28px;
+    line-height: 73.57px;
+    text-transform: uppercase;
+}
+
+h2 {
+    width: 581px;
+    height: 62px;
+    color: #8f8f8f;
+    font-family: "Georgia - Italic";
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 62.44px;
+}
+
+p {
+    margin: 0;
+    color: #000000;
+    font-family: 'Georgia';
+    font-size: 27px;
+    line-height: 40.41px;
+}
+
+span {
+    font-family: "Georgia - Italic";
+}
+
+.title {
+    position: absolute;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+    color: #767676;
+    font-family: "Proxima Nova Rg";
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+}
+
+.black-div {
+    position: fixed;
+    top: 50px;
+    margin-left: 350px;
+    padding: 50px;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: #fefefe;
+    font-family: "Playfair Display";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 94.03px;
+}
+
+.div-in-black-div {
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.411);
+}
+
+.orange-div {
+    display: flex;
+    position: fixed;
+    top: 250px;
+    margin-left: 400px;
+    padding-left: 40px;
+    width: 100%;
+    height: 76px;
+    box-shadow: -4px -4px 59px rgba(0, 0, 0, 0.16);
+    background-color: #fbc02d;
+}
+
+img {
+    padding-right: 2%;
+}
+
+@font-face {
+    font-family: "Proxima Nova Rg";
+    src: url('./fonts/Proxima\ Nova\ Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('./fonts/georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Georgia - Italic";
+    src: url('./fonts/georgiai.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Futura PT Heavy";
+    src: url('./fonts/ofont.ru_Futura\ PT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
