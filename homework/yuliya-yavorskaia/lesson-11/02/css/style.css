@@ -1,0 +1,124 @@
+body {
+  width: auto;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e2e7ec;
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.catalog {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0;
+  padding: 90px 0 95px 0;
+}
+.catalog__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  list-style: none;
+}
+.catalog__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+.catalog__item--fantastic::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.1));
+}
+.catalog__item:nth-child(2) {
+  margin-right: 0;
+}
+.catalog__item:nth-child(5n) {
+  margin-right: 0;
+}
+.catalog__image {
+  margin-bottom: 20px;
+}
+.catalog__item--fantastic .catalog__image {
+  margin-bottom: 0;
+}
+.catalog__item--fantastic .catalog__data {
+  position: absolute;
+  left: 45px;
+  bottom: 110px;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+.catalog__item--fantastic .catalog__presentation {
+  position: absolute;
+  left: 45px;
+  bottom: 30px;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+.catalog__data {
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #818181;
+}
+.catalog__presentation {
+  margin: 0;
+  margin-bottom: 60px;
+  padding-left: 25px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.catalog__author {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 20px;
+  padding-left: 35px;
+  background-image: url("../img/author.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.catalog__item--growth .catalog__data {
+  visibility: hidden;
+}
+.catalog__loading {
+  display: flex;
+  width: 220px;
+  margin: 0 auto;
+}
+.catalog__loading-image {
+  margin-right: 20px;
+}
+.catalog__text {
+  font-size: 13px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #99a5b0;
+}
