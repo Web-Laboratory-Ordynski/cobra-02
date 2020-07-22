@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 400px;
+    height: 500px;
+}
+
+.container__wrapper {
+    background-image: url(./images/bg-modal.jpg);
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 20px rgba(2, 41, 120, 0.1);
+}
+
+.container__wrapper::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(32deg, #3023ae 0%, #c86dd7 100%);
+    opacity: .8;
+    z-index: 0;
+}
+
+.content {
+    padding: 50px 70px;
+}
+
+.nav {
+    width: 200px;
+    padding-bottom: 54px;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.nav__item {
+    position: relative;
+    list-style: none;
+    z-index: 1;
+}
+
+.nav__link {
+    color: #FBF6E4;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    border-bottom: 3px solid #E66A64;
+}
+
+.content__form {
+    position: relative;
+    z-index: 1;
+    padding: 2px;
+}
+
+.content__form:not(:target) {
+    display: none;
+}
+
+.form__input {
+    background: none;
+    border: none;
+    width: 100%;
+    border: 2px solid rgba(191, 185, 204, 0.54);
+    color: white;
+    margin: 7px 0 15px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.form__label {
+    color: #fbf6e4;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: .02em;
+    cursor: pointer;
+}
+
+.form__item--checkbox {
+    padding: 5px 0;
+}
+
+[type=checkbox] {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+}
+
+.form__label--checkbox {
+    display: flex;
+    align-items: center;
+    letter-spacing: .03em;
+    padding-bottom: 36px;
+}
+
+[type=checkbox]:checked+.form__label .form__checkbox {
+    font-size: 12px;
+    background-color: #23ae92;
+}
+
+.form__checkbox {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+    font-size: 0;
+    border: 2px solid #23ae92;
+    transition: ease .3s font-size;
+}
+
+.form__button{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #23ae92;
+    color: #fbf6e4;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    padding: 9px;
+    border: 2px solid #23ae92;
+}
+
