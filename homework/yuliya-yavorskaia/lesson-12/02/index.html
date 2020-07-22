@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign in Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="modal">
+    <div class="modal__panel">
+      <div class="modal__tabs tabs">
+        <ul class="tabs__list">
+          <li class="tabs__item">
+            <a href="#sign" class="tabs__link tabs__link--active">Sign in</a>
+          </li>
+          <li class="tabs__item">
+            <a href="#join" class="tabs__link">Join us</a>
+          </li>
+        </ul>
+        <div class="tabs__wrapper">
+          <div class="tabs__content">
+            <form action="#" method="get">
+              <div class="form">
+                <div class="form__controls">
+                  <label class="form__label" for="Username">Username</label>
+                  <input class="form__input" minlength="3" type="text" name="Username" id="Username">
+                  <div class="form__error">error</div>
+                </div>
+                <div class="form__controls">
+                  <label class="form__label" for="Password">Password</label>
+                  <input class="form__input" required type="password" name="Password" id="Password">
+                  <div class="form__error">error</div>
+                </div>
+                <div class="form__controls form__controls--checkbox">
+                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="keep" id="keep"
+                    checked>
+                  <label class="form__label form__label--checkbox" for="keep">Keep me signed in</label>
+                </div>
+                <div class="form__controls form__controls--submit">
+                  <button type="submit" class="btn btn--primary">Sign in</button>
+                </div>
+                <div class="form__advanced">
+                  <a href="#" class="form__link">Forgot password</a>
+                  <a href="#join" class="form__link">Create an account</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

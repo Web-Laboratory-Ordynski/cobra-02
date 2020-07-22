@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nike</title>
+  <link rel="preload" href="fonts/museosansrounded100.woff2" as="font">
+  <link rel="preload" href="fonts/museosansrounded100.woff" as="font">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class="page-main">
+    <div class="container">
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item product">
+            <div class="product__logo">
+              <a href="#">
+                <img class="product__logo-image" src="img/logo.png" width="65" height="33" alt="logo">
+              </a>
+            </div>
+            <div class="product__basics">
+              <a class="product__link" href="#">
+                <img class="product__image" src="img/nike.png" width="329" height="159" alt="Nike">
+              </a>
+              <div class="product__info">
+                <h3 class="product__title">Nike SB Stefan<br> Janoski Max</h3>
+                <span class="product__description">Unisex Skateboarding Shoe</span>
+                <ul class="product__star">
+                  <li>
+                    <img class="product__star-image" src="img/star1.png" width="12" height="12" alt="Star">
+                  </li>
+                  <li>
+                    <img class="product__star-image" src="img/star1.png" width="12" height="12" alt="Star">
+                  </li>
+                  <li>
+                    <img class="product__star-image" src="img/star1.png" width="12" height="12" alt="Star">
+                  </li>
+                  <li>
+                    <img class="product__star-image" src="img/star2.png" width="12" height="12" alt="Star">
+                  </li>
+                  <li>
+                    <img class="product__star-image" src="img/star2.png" width="12" height="12" alt="Star">
+                  </li>
+                </ul>
+                <div class="product__size-quantity-wrapper">
+                  <div class="product__size-wrapper">
+                    <label class="product__size-general" placeholder="Size">
+                      <input type="radio" name="size">
+                      <div>
+                        <input type="radio" name="size" value="size25" id="size25">
+                        <label for="size25">25</label>
+
+                        <input type="radio" name="size" value="size26" id="size26">
+                        <label for="size26">26</label>
+
+                        <input type="radio" name="size" value="size27" id="size27">
+                        <label for="size27">27</label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="product__quantity-wrapper">
+                    <label class="product__size-general" placeholder="Qty">
+                      <input type="radio" name="quantity">
+                      <div>
+                        <input type="radio" name="quantity" value="quantity1" id="quantity1">
+                        <label for="quantity1">1</label>
+
+                        <input type="radio" name="quantity" value="quantity2" id="quantity2">
+                        <label for="quantity2">2</label>
+
+                        <input type="radio" name="quantity" value="quantity1" id="quantity3">
+                        <label for="quantity3">3</label>
+                      </div>
+                    </label>
+
+                  </div>
+                </div>
+                <a class="product__btn btn" href="#">Add to cart</a>
+              </div>
+            </div>
+            <div class="product__slider">
+              <ul class="product__list slider">
+                <li class="product__item slider__item">
+                  <div></div>
+                </li>
+                <li class="product__item slider__item">
+                  <div></div>
+                </li>
+                <li class="product__item slider__item">
+                  <div></div>
+                </li>
+                <li class="product__item slider__item">
+                  <div></div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+</body>
+
+</html>

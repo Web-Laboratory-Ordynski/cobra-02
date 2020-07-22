@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CaheeII</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <main class="page-main">
+    <div class="container">
+      <div class="page-main__wrapper">
+        <section class="contacts">
+          <h1 class="contacts__title">Contact</h1>
+          <p class="contacts__descr">
+            For new projects, ideas, business or anything<br>you'd like to discuss, contact with me!
+          </p>
+          <div class="contacts__bottom">
+            <form class="contacts__form feedback" action="#" method="get">
+              <fieldset class="feedback__fieldset feedback__fieldset--client">
+                <ul class="feedback__list feedback__list--client">
+                  <li class="feedback__item feedback__item--name">
+                    <label class="feedback__label" for="name"></label>
+                    <input class="feedback__input-text" type="text" placeholder="Auskteez Tran" id="name" name="name"
+                      required pattern="[A-Za-zА-Яа-яЁё]">
+                  </li>
+                  <li class="feedback__item">
+                    <label class="feedback__label feedback__label--email" for="email"></label>
+                    <input class="feedback__input-text feedback__input-text--email" type="email"
+                      placeholder="Your email..." id="email" name="email" required>
+                  </li>
+                  <li class="feedback__item">
+                    <label class="feedback__label feedback__label--phone" for="phone"></label>
+                    <input class="feedback__input-text feedback__input-text--phone" type="tel"
+                      placeholder="Your phone number..." id="phone" name="phone" required pattern="2-[0-9]{3}-[0-9]{3}">
+                  </li>
+                </ul>
+                <div class="feedback__comments-wrapper">
+                  <textarea class="feedback__textarea" placeholder="Your messge..." name="comments"></textarea>
+                </div>
+              </fieldset>
+            </form>
+            <div class="contacts__company">
+              <div class="contacts__address">
+                <strong>Address</strong>
+                <br>123 City name, Street, City, Country
+              </div>
+              <div class="contacts__mail">
+                <strong>Email</strong>
+                <a class="contacts__link" href="mailto:cahee@domain.com">cahee@domain.com</a>
+              </div>
+              <div class="contacts__tel">
+                <strong>phone</strong>
+                <a class="contacts__link" href="tel:0123456789">+012 345 6789</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__wrapper">
+        <p class="page-footer__copyright">
+          © 2015 Company. All right reserved.
+        </p>
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/footer-logo.png" width="64" height="27" alt="Cahee">
+        </a>
+        <p class="page-footer__author">
+          Made with <span>love</span> by Auskteez
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
