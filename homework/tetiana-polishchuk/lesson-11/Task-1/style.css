@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'Miso-bold';
+    src: url(./fonts/MISO-BOL.woff) format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Miso-regular';
+    src: url(./fonts/Miso.woff) format('woff'), url(./fonts/Miso.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-light';
+    src: url(./fonts/Lato-Light.woff) format('woff'), url(./fonts/Lato-Light.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 600px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FDDE7E;
+}
+
+.content__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 440px;
+    background-color: white;
+}
+
+.content__card:hover{
+    transform: scale(1.1);
+}
+
+.card__price{
+    padding-bottom: 20px;
+    font-family: 'Miso-bold';
+    color: #02995B;
+    font-size: 70px;
+}
+.card__image {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.image__icon {
+    padding-bottom: 10px;
+}
+
+.positioned-icon {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    opacity: 0.1;
+}
+
+.card__title{
+    font-family: 'Miso-regular';
+    color: #333333;
+    font-size: 56px;
+    padding-bottom: 30px;
+}
+
+.card__description{
+    font-family: 'Lato-Light';
+    color: #333333;
+    font-size: 20px;
+}
