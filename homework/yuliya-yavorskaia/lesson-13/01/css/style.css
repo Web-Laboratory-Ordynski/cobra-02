@@ -19,12 +19,12 @@ img {
   max-width: 1500px;
   margin: 0 auto;
   padding: 0;
-  padding: 80px 100px 80px 100px;
+  padding: 5rem 6.25rem 5rem 6.25rem;
   background-color: #ffffff;
 }
 .grid-container-top {
   display: grid;
-  grid-gap: 55px;
+  grid-gap: 6.25rem;
   grid-template-areas: "one one two" "one one three" "four five six";
 }
 .catalog__list {

@@ -15,13 +15,13 @@ img {
   max-width: 1120px;
   margin: 0 auto;
   padding: 0;
-  padding: 90px 0 95px 0;
+  padding: 5.63rem 0 5.94rem 0;
 }
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 1.25rem;
   grid-template-areas: "fantastic fantastic inspiration" "guide growth course";
 }
 .catalog__item--fantastic {
@@ -42,7 +42,7 @@ img {
 }
 .catalog__list {
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
   padding: 0;
   list-style: none;
 }
@@ -60,16 +60,16 @@ img {
 }
 .catalog__item--fantastic .catalog__data {
   position: absolute;
-  left: 45px;
-  bottom: 110px;
+  left: 1.33rem;
+  bottom: 6.88rem;
   margin: 0;
   padding: 0;
   color: #ffffff;
 }
 .catalog__item--fantastic .catalog__presentation {
   position: absolute;
-  left: 45px;
-  bottom: 30px;
+  left: 1.33rem;
+  bottom: 0.66rem;
   margin: 0;
   padding: 0;
   font-size: 30px;
@@ -89,7 +89,7 @@ img {
 }
 .catalog__presentation {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
   padding-left: 25px;
   font-size: 22px;
   line-height: 30px;
