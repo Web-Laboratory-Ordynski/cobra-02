@@ -1,0 +1,204 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Museo';
+    src: url('fonts/MuseoSansRounded-100.eot?#iefix') format('embedded-opentype'), url('fonts/MuseoSansRounded-100.woff') format('woff'), url('fonts/MuseoSansRounded-100.woff2') format('woff2'), url('fonts/MuseoSansRounded-100.ttf') format('truetype'), url('fonts/MuseoSansRounded-100.svg#MuseoSansRounded-100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+}
+
+body {
+    font-family: 'Museo', sans-serif;
+    font-weight: 300;
+    color: #262626;
+    background-color: #282828;
+}
+
+div,
+section,
+header,
+ul,
+li,
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.cards {
+    max-width: 800px;
+    margin: 100px auto;
+    background: url(img/bg.jpg);
+    background-size: 800px 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.card_container {
+    position: relative;
+    padding: 100px 60px;
+    margin: auto;
+}
+
+.card {
+    background-color: #111a28;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 1px 65px #000000d1;
+}
+
+.card__side {
+    position: relative;
+    align-self: center;
+    padding: 75px 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.logo__brand-img {
+    max-width: 100%;
+}
+
+.slide {
+    padding: 40px 30px;
+    justify-content: center;
+}
+
+.slide__select-color {
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    align-items: center;
+}
+
+.slide__color {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    margin: 0 3px;
+}
+
+.slide__color:nth-child(1) {
+    background-color: #1f273f;
+}
+
+.slide__color:nth-child(2) {
+    background-color: #ffffff;
+}
+
+.slide__color:nth-child(3) {
+    background-color: #ed3333;
+}
+
+.slide__color:nth-child(4) {
+    background-color: #29e3ea;
+}
+
+.slide__color--active {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #ffffff80;
+}
+
+.info__title {
+    font-size: 24px;
+    line-height: 26px;
+    color: #e1e1e1;
+    margin-bottom: 10px;
+}
+
+.info__descr {
+    font-size: 14px;
+    line-height: 26px;
+    color: #e1e1e180;
+    margin-bottom: 10px;
+}
+
+.stars {
+    margin-bottom: 20px;
+    justify-content: flex-start;
+}
+
+.stars__star {
+    width: auto;
+    margin: 0 1px;
+}
+
+.options {
+    justify-content: flex-start;
+    margin-bottom: 30px;
+}
+
+.options__sizes {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 5px;
+    margin-right: 5px;
+    color: #e1e1e180;
+    background-color: #111a28;
+    cursor: pointer;
+}
+
+.options__quantities {
+    font-size: 14px;
+    line-height: 18px;
+    padding: 5px;
+    margin-right: 5px;
+    color: #e1e1e180;
+    background-color: #111a28;
+    cursor: pointer;
+}
+
+.card__btn {
+    font-size: 14px;
+    line-height: 18px;
+    color: #e1e1e180;
+    padding: 14px 60px;
+    background: none;
+    border: 1px solid #4c525a;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card__btn:hover {
+    background: #4c525a;
+    transition: .3s;
+}
+
+@media (max-width: 799px) {
+    .cards {
+        background-repeat: repeat;
+        margin: 0;
+    }
+    .card {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 499px) {
+    .card_container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
