@@ -176,6 +176,7 @@ button:hover {
 }
 
 .picture {
+    margin-left: 15%;
     width: 600px;
     position: relative;
 }
