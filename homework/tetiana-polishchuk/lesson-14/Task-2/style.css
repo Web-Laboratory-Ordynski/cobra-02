@@ -10,7 +10,8 @@
     0% {
         background-image: url(./rubashka.jpg);
     }
-    15% {
+    25% {
+        transform: rotateY(180deg);
         background: transparent;
     }
 }
@@ -18,9 +19,11 @@
 @keyframes opacity {
     0% {
         opacity: 0;
+        
     }
-    15% {
+    25% {
         opacity: 1;
+        transform: rotateY(180deg);
     }
 }
 
@@ -35,7 +38,7 @@
 }
 
 .card-wrapper:hover {
-    animation: changeBackground 5s ease;
+    animation: changeBackground 5s;
 }
 .card {
     opacity: 0;
@@ -65,7 +68,7 @@
 }
 
 .card-red:hover {
-    animation: opacity 5s ease;
+    animation: opacity 5s;
 }
 
 span {
