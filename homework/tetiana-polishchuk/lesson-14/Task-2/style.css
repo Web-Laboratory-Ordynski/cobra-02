@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes changeBackground {
+    0% {
+        background-image: url(./rubashka.jpg);
+    }
+    15% {
+        background: transparent;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+}
+
+.card-wrapper {
+    width: 100px;
+    height: 200px;
+    background-image: url(./rubashka.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10px;
+}
+
+.card-wrapper:hover {
+    animation: changeBackground 5s ease;
+}
+.card {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 200px;
+    font-size: 1.5em;
+}
+
+.card:hover {
+    animation: opacity 5s ease;
+}
+
+.card-red {
+    opacity: 0;
+    color: red;
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+}
+
+.card-red:hover {
+    animation: opacity 5s ease;
+}
+
+span {
+    width: 30px;
+}
+
+.item-center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.item-down {
+    transform: rotate(180deg);
+}

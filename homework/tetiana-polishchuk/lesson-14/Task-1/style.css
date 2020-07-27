@@ -182,7 +182,8 @@ button:hover {
 
 .picture-title {
     position: absolute;
-    top: 231px;
+    top: 215px;
+    left: -70px;
     font-family: "Raleway-Bold";
     font-size: 90px;
     color: #FFFFFF;
@@ -204,11 +205,11 @@ svg {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.services-item:hover{
+.services-item:hover {
     cursor: pointer;
 }
 
-.services-item:active{
+.services-item:active {
     background-color: rgba(0, 0, 255, 0.212);
 }
 
