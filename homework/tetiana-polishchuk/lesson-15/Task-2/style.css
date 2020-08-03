@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url(./fonts/OpenSans-Bold.woff) format("woff"), url(./fonts/OpenSans-Bold.woff2) format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: wrap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(./fonts/Raleway-Regular.woff) format("woff"), url(./fonts/Raleway-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url(./fonts/Raleway-Medium.woff) format("woff"), url(./fonts/Raleway-Medium.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(./fonts/Roboto-Black.woff) format("woff"), url(./fonts/Roboto-Black.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.page {
+  text-align: center;
+}
+.page__tagline {
+  margin: 5% auto 0.5rem;
+}
+.page__title {
+  margin: 0 auto 2.3rem;
+}
+.page__divider {
+  margin: 0 auto 2rem;
+}
+
+.tagline {
+  font-family: "Raleway-Medium";
+  font-size: 18px;
+  color: #898F8F;
+  text-align: center;
+}
+
+.title {
+  font-family: "Roboto-Black";
+  font-size: 60px;
+  color: #FFCC00;
+  text-align: center;
+}
+
+.divider {
+  width: 450px;
+  position: relative;
+  text-align: center;
+}
+.divider__img {
+  width: 16px;
+  height: 19px;
+}
+.divider::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 211px;
+  background-color: #FFCC00;
+  left: 0;
+  top: 10px;
+}
+.divider::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 211px;
+  background-color: #FFCC00;
+  left: 238px;
+  top: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.content__line {
+  margin-left: 2.5%;
+}
+
+.picture {
+  position: relative;
+  border: 2px solid #FFCC00;
+}
+.picture__img {
+  max-width: 389px;
+  max-height: 389px;
+}
+
+.top-left {
+  position: absolute;
+  content: "";
+  border-left: 2px solid #FFCC00;
+  border-top: 2px solid #FFCC00;
+  top: -15px;
+  left: -15px;
+  width: 100px;
+  height: 100px;
+}
+
+.top-right {
+  position: absolute;
+  content: "";
+  border-right: 2px solid #FFCC00;
+  border-top: 2px solid #FFCC00;
+  top: -15px;
+  right: -15px;
+  width: 100px;
+  height: 100px;
+}
+
+.bottom-left {
+  position: absolute;
+  content: "";
+  border-left: 2px solid #FFCC00;
+  border-bottom: 2px solid #FFCC00;
+  bottom: -15px;
+  left: -15px;
+  width: 100px;
+  height: 100px;
+}
+
+.bottom-right {
+  position: absolute;
+  content: "";
+  border-right: 2px solid #FFCC00;
+  border-bottom: 2px solid #FFCC00;
+  bottom: -15px;
+  right: -15px;
+  width: 100px;
+  height: 100px;
+}
+
+.line {
+  background-color: #FFCC00;
+  height: 561px;
+  width: 2px;
+}
+
+.info__main-heading {
+  padding-bottom: 30px;
+}
+.info__heading {
+  margin: 30px auto;
+}
+.info__description {
+  padding-bottom: 25px;
+}
+.info__button {
+  margin: 35px auto 0;
+}
+
+.main-heading {
+  position: relative;
+  font-family: "Roboto-Black";
+  font-size: 36px;
+  color: #666666;
+  text-align: center;
+}
+.main-heading::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #FFCC00;
+  bottom: 0;
+  left: 38%;
+}
+
+.heading {
+  font-family: "Raleway";
+  font-size: 24px;
+  color: #666666;
+}
+
+.description {
+  position: relative;
+  max-width: 420px;
+  font-family: "Raleway-Medium";
+  font-size: 14px;
+  color: #333333;
+  line-height: 1.8em;
+}
+.description__left {
+  position: absolute;
+  content: "";
+  background-color: #FFCC00;
+  width: 11px;
+  height: 5px;
+  bottom: -10px;
+  left: 44%;
+}
+.description__center {
+  position: absolute;
+  content: "";
+  background-color: #FFCC00;
+  width: 20px;
+  height: 5px;
+  bottom: -10px;
+  left: 48%;
+}
+.description__right {
+  position: absolute;
+  content: "";
+  background-color: #FFCC00;
+  width: 11px;
+  height: 5px;
+  bottom: -10px;
+  left: 54%;
+}
+
+.button {
+  width: 120px;
+}
+
+.btn {
+  padding: 3px 5px;
+  font-family: "OpenSans-Bold";
+  font-size: 14px;
+  color: #666666;
+  background: transparent;
+  border: 2px solid #FFCC00;
+  text-transform: uppercase;
+}
+.btn:hover {
+  cursor: pointer;
+}
