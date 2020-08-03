@@ -165,13 +165,36 @@
         padding-bottom: 30px;
     }
     &__heading {
-        margin: 30px auto;
+        margin: 25px auto;
+    }
+    &__icons{
+        margin: 25px auto;
     }
     &__description {
         padding-bottom: 25px;
     }
     &__button {
         margin: 35px auto 0;
+    }
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__item{
+        margin-right: 5px;
+    }
+        &:hover{
+            cursor: pointer;
+        }
+}
+
+.item{
+    &__image{
+        width: 31px;
+        height: 31px;
     }
 }
 .main-heading {
