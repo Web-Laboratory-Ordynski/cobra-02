@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 12 (hard)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="form-page">
+    <div class="form-page__container">
+        <div class="form-page__form form">
+            <div class="form__tabs">
+                <div class="form__tabs-cont tab-marker">
+                    <input type="radio" id="signin" name="tabs" class="tab-marker__tab" checked>
+                    <label for="signin" class="tab-marker__label">Sign in</label>
+                </div>
+
+                <div class="form__tabs-cont tab-marker">
+                    <input type="radio" id="joinus" name="tabs" class="tab-marker__tab">
+                    <label for="joinus" class="tab-marker__label">Join us</label>
+                </div>
+            </div>
+
+            <div class="form-page__form-block form">
+                <form id="sign" class="form__tab" action="#" method="get">
+                    <label for="name" class="form__label">Username
+                        <input type="text" name="name" class="form__input" minlength="3" pattern="[A-zА-я]+" required>
+                    </label>
+                    <label for="name" class="form__label">Password
+                        <input type="password" name="password" class="form__input" minlength="6" required>
+                    </label>
+
+                    <div class="form__check check">
+                        <input type="checkbox" id="keepin" name="keepin" class="check__input" required>
+                        <label for="keepin" class="check__label">Keep me signed in</label>
+                    </div>
+
+                    <button class="form__button" type="submit">
+                        Sign in
+                    </button>
+
+                    <div class="form__links">
+                        <a href="#" class="form__link">Forgot password</a>
+                        <a href="#" class="form__link">Create an account</a>
+                    </div>
+                </form>
+
+                <form id="join" class="form__tabs" action="#" method="get">
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
