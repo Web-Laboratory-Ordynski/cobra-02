@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Our team cards
+    link(rel="preload" href="fonts/raleway-v16-latin-300.woff2" as="font")
+    link(rel="preload" href="fonts/raleway-v16-latin-300.woff" as="font")
+    link(rel="preload" href="fonts/raleway-v16-latin-700.woff2" as="font")
+    link(rel="preload" href="fonts/raleway-v16-latin-700.woff" as="font")
+    link(href="css/style.css" rel="stylesheet")
+          
+  body
+    main.page-main
+      div.container
+        div.page-main__wrapper.cards
+          span.cards__intro The geniuses behind our work
+          h2.cards__title Our team
+          div.cards__line
+            img.cards__fire(src="img/bonfire.png" width="16" height="19" alt="fire")
+          ul.cards__list
+            li.cards__item
+              div.cards__wrap
+                img.cards__image(src="img/geniuses.png" width="388" height="388" alt="Sahariar Kabir")
+              div.cards__straight
+              div.cards__info
+                h2.cards__employee Sahariar Kabir
+                .cards__direction Frontend Developer
+                ul.cards__social
+                  li.cards__shell
+                    img.cards__icon(src="img/facebook.png" width="30" height="30" alt="facebook")
+                  li.cards__shell
+                    img.cards__icon(src="img/twitter.png" width="30" height="30" alt="twitter")
+                  li.cards__shell
+                    img.cards__icon(src="img/google.png" width="30" height="30" alt="google")
+                  li.cards__shell
+                    img.cards__icon(src="img/linkedin.png" width="30" height="30" alt="linkedin")
+                p.cards__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                  br
+                  |  cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum.
+                  br
+                  | Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat.
+                  br
+                  |  Praesent rutrum eget massa a convallis. Nam vitae augue
+                  br
+                  |  malesuada, accumsan mauris ut, consectetur.
+                .cards__dotted
+                a.cards__button(href="#" class="" role="button") View profile               
