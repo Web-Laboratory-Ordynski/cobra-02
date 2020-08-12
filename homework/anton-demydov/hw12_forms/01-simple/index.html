@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 11 (simple)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+</head>
+
+<body class="contacts-block">
+    <div class="contacts-block__container container">
+        <div class="contacts-title">
+            <div class="contacts-title__title">Contact</div>
+            <div class="contacts-title__subtitle">For new projects, ideas, business or anything<br> you'd like to discuss, contact with me!</div>
+        </div>
+
+        <div class="contacts-block__subcontainer">
+            <form action="#" method="get" class="contacts-block__form form">
+                <div class="form__form-group">
+                    <input class="form__form-input" id="name" type="text" name="name" placeholder="Your name" required autocomplete="sdfdsfsd" pattern="[a-zA-Zа-яА-Я]+" minlength="6">
+                    <label class="form__form-label" for="name"></label>
+                </div>
+
+                <div class="form__form-group">
+                    <input class="form__form-input jq-form__email" type="email" name="email" placeholder="Your e-mail" required autocomplete="dfgfd" data-mask="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <label class="form__form-label" for="email"></label>
+                </div>
+
+                <div class="form__form-group">
+                    <input class="form__form-input jq-form__phone" type="phone" name="phone" minlength="16" placeholder="Your telephone number" required>
+                    <label class="form__form-label" for="phone"></label>
+                </div>
+                <div class="form__form-group">
+                    <textarea class="form__form-input" name="message" rows="10" placeholder="Your message" required></textarea>
+                    <label class="form__form-label" for="message"></label>
+                </div>
+
+                <input class="form__form-input-button" type="submit" name="submit" placeholder="send">
+            </form>
+
+            <address class="contacts-block__contacts cont ">
+                <div class="cont__contact">
+                    <div class="cont__title ">ADDRESS</div>
+                    <div class="cont__coords ">123 City name, Street, City, Country</div>
+                </div>
+
+                <div class="cont__contact ">
+                    <div class="cont__title ">EMAIL</div>
+                    <a class="cont__coords " href="mailto:cahee@domain.com ">cahee@domain.com</a>
+                </div>
+
+                <div class="cont__contact ">
+                    <div class="cont__title ">PHONE</div>
+                    <a class="cont__coords " href="tel:+012 345 6789 ">+012 345 6789</a>
+                </div>
+            </address>
+        </div>
+    </div>
+
+    <footer class="footer ">
+        <div class="footer__container container ">
+            <div class="footer__copyright ">&copy; 2015 Company. All right reserved.</div>
+            <div class="footer__logo ">Cahee</div>
+            <div class="footer__author ">Made with <span class="footer__span ">love</span> by Auskteez</div>
+        </div>
+    </footer>
+</body>
+<script>
+    $(document).ready(function() {
+        $('.jq-form__phone').mask('+380-99-999-9999');
+
+    });
+</script>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .post-order {
+            display: flex;
+            width: 500px;
+            margin: auto;
+        }
+        
+        .search-form {
+            display: flex;
+            position: relative;
+            width: 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            background: rgba(0, 0, 0, .1);
+            margin: 50px auto;
+            padding: 50px 0;
+        }
+        
+        input,
+        select {
+            display: flex;
+            width: 100%;
+            padding: 10px 20px;
+            margin: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="post-order">
+        <form method="get" class='search-form' action="https://www.google.com/search">
+            <h1>Поиск по стране или по сайту</h1>
+
+            <input class="search-form__search" name="q" type="text" placeholder="Поиск" required>
+            <select class="search-form__country" name="cr" id="">
+                <option value="countryUA" selected>Украина</option>
+                <option value="countryRU">РФ</option>
+                <option value="countryGB">United kingdom</option>
+                <option value="countryJP">Japan</option>
+            </select>
+            <select class="search-form__site" name="as_sitesearch" id="">
+                <option value="1" disabled selected>Выберите сайт</option>
+                <option value="strana.ua">Страна</option>
+                <option value="korrespondent.net">Корреспондент</option>
+                <option value="pravda.ua">Украинская правда</option>
+                <option value="tsn.ua">ТСН</option>
+            </select>
+
+            <!--input class="country" name="c" cr="countryJP" type="text" placeholder="Country" required-->
+
+            <input type="submit" class="order-form__form-btn-submit--hover ev-purchase" value="Замовити">
+
+        </form>
+
+    </section>
+</body>
+
+</html>
