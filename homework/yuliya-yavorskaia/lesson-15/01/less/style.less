@@ -1,0 +1,142 @@
+// out: ../css/style.css
+
+body {
+  width: auto;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Times New Roman', Times, serif, serif;
+  background-color: #a13838;
+
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 1.25rem;
+
+  list-style: none;
+}
+
+.cards__item {
+  position: relative;
+
+  width: 200px;
+  height: 280px;
+
+  margin-bottom: 1.25rem;
+
+  background-color: #ecf1e6;
+
+  border-radius: 15px;
+
+  transition: 1s;
+  transform-style: preserve-3d;
+
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateY(0deg);
+
+  -moz-transition: 1s;
+  -moz-transform-style: preserve-3d;
+  -moz-transform: rotateY(0deg);
+
+}
+
+.cards__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.cards__item:hover {
+  transform: rotateY(180deg);
+
+  -webkit-transform: rotateY(180deg);
+
+  -moz-transform: rotateY(180deg);
+}
+
+.cards__digniti {
+  align-self: left;
+
+  display: block;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 4.37rem;
+
+  font-size: 24px;
+}
+
+.cards__suit {
+  align-self: center;
+
+  display: block;
+
+  font-size: 48px;
+}
+
+.cards__digniti--hearts,
+.cards__digniti--diamonds,
+.cards__suit--hearts,
+.cards__suit--diamonds {
+  color: #f01621;
+}
+
+.cards__item .cards__front {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+
+  background-color: #ecf1e6;
+
+  backface-visibility: hidden;
+
+  -webkit-backface-visibility: hidden;
+
+  -moz-backface-visibility: hidden;
+}
+
+.cards__item .cards__back {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 10px;
+
+  background: repeating-radial-gradient(circle, #cead78, #f6efd2 10px, #bdc2b7 10px, #8cc078 20px);
+
+  backface-visibility: hidden;
+
+  transform: rotateY(180deg);
+
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+
+  -moz-backface-visibility: hidden;
+  -moz-transform: rotateY(180deg);
+}
