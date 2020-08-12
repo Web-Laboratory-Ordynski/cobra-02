@@ -1,0 +1,270 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url(./fonts/OpenSans-Bold.woff) format("woff"), url(./fonts/OpenSans-Bold.woff2) format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: wrap;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(./fonts/Raleway-Regular.woff) format("woff"), url(./fonts/Raleway-Regular.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: wrap;
+}
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url(./fonts/Raleway-Medium.woff) format("woff"), url(./fonts/Raleway-Medium.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: wrap;
+}
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(./fonts/Roboto-Black.woff) format("woff"), url(./fonts/Roboto-Black.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: wrap;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+.page {
+    text-align: center;
+    &__tagline {
+        margin: 5% auto 0.5rem;
+    }
+    &__title {
+        margin: 0 auto 2.3rem;
+    }
+    &__divider {
+        margin: 0 auto 2rem;
+    }
+}
+.tagline {
+    font-family: $ral-med;
+    font-size: 18px;
+    color: $tagline-color;
+    text-align: center;
+}
+
+.title {
+    font-family: $rob;
+    font-size: 60px;
+    color: $title-color;
+    text-align: center;
+}
+
+.divider {
+    width: 450px;
+    position: relative;
+    text-align: center;
+    &__img {
+        width: 16px;
+        height: 19px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 211px;
+        background-color: $title-color;
+        left: 0;
+        top: 10px;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 211px;
+        background-color: $title-color;
+        left: 238px;
+        top: 10px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    &__line {
+        margin-left: 2.5%;
+    }
+}
+
+.picture {
+    position: relative;
+    border: 2px solid $title-color;
+    &__img {
+        max-width: 389px;
+        max-height: 389px;
+    }
+}
+
+.top-left {
+    position: absolute;
+    content: "";
+    border-left: 2px solid $title-color;
+    border-top: 2px solid $title-color;
+    top: -15px;
+    left: -15px;
+    width: 100px;
+    height: 100px;
+}
+
+.top-right {
+    position: absolute;
+    content: "";
+    border-right: 2px solid $title-color;
+    border-top: 2px solid $title-color;
+    top: -15px;
+    right: -15px;
+    width: 100px;
+    height: 100px;
+}
+
+.bottom-left {
+    position: absolute;
+    content: "";
+    border-left: 2px solid $title-color;
+    border-bottom: 2px solid $title-color;
+    bottom: -15px;
+    left: -15px;
+    width: 100px;
+    height: 100px;
+}
+
+.bottom-right {
+    position: absolute;
+    content: "";
+    border-right: 2px solid $title-color;
+    border-bottom: 2px solid $title-color;
+    bottom: -15px;
+    right: -15px;
+    width: 100px;
+    height: 100px;
+}
+
+.line {
+    background-color: $title-color;
+    height: 561px;
+    width: 2px;
+}
+.info {
+    &__main-heading {
+        padding-bottom: 30px;
+    }
+    &__heading {
+        margin: 25px auto;
+    }
+    &__icons{
+        margin: 25px auto;
+    }
+    &__description {
+        padding-bottom: 25px;
+    }
+    &__button {
+        margin: 35px auto 0;
+    }
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__item{
+        margin-right: 5px;
+    }
+        &:hover{
+            cursor: pointer;
+        }
+}
+
+.item{
+    &__image{
+        width: 31px;
+        height: 31px;
+    }
+}
+.main-heading {
+    position: relative;
+    font-family: $rob;
+    font-size: 36px;
+    color: $main-color;
+    text-align: center;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100px;
+        height: 2px;
+        background-color: $title-color;
+        bottom: 0;
+        left: 38%;
+    }
+}
+.heading {
+    font-family: $ral;
+    font-size: 24px;
+    color: $main-color;
+}
+.description {
+    position: relative;
+    max-width: 420px;
+    font-family: $ral-med;
+    font-size: 14px;
+    color: $desc-color;
+    line-height: 1.8em;
+    &__left {
+        position: absolute;
+        content: "";
+        background-color: $title-color;
+        width: 11px;
+        height: 5px;
+        bottom: -10px;
+        left: 44%;
+    }
+    &__center {
+        position: absolute;
+        content: "";
+        background-color: $title-color;
+        width: 20px;
+        height: 5px;
+        bottom: -10px;
+        left: 48%;
+    }
+    &__right {
+        position: absolute;
+        content: "";
+        background-color: $title-color;
+        width: 11px;
+        height: 5px;
+        bottom: -10px;
+        left: 54%;
+    }
+}
+.button {
+    width: 120px;
+}
+.btn {
+    padding: 3px 5px;
+    font-family: $os;
+    font-size: 14px;
+    color: $main-color;
+    background: transparent;
+    border: 2px solid $title-color;
+    text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+    }
+}
