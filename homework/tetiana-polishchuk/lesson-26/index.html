@@ -31,7 +31,8 @@
                     <p class="welcome-para mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                         eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                    <button type="button" class="btn btn-light p-0 btn-lg mb-4" data-toggle="modal" data-target="#form">HIRE ME</button>
+                    <button type="button" class="btn btn-light p-0 btn-lg mb-4" data-toggle="modal"
+                        data-target="#form">HIRE ME</button>
                     <div class="welcome-arrow text-center pb-2"><a class="text-white" href="#about"><svg
                                 class="welcome-svg">
                                 <use xlink:href="sprite.svg#arrow"></use>
@@ -165,40 +166,43 @@
         <div class="container">
             <div class="col-12 col-md-8 text-white d-flex justify-content-between align-items-center m-auto p-4">
                 <p class="m-0">Need a graphic designer? <strong>Ready to work!</strong></p>
-                <button type="button" class="btn btn-light p-0 btn-lg mb-4">HIRE ME</button>
+                <button type="button" class="btn btn-light p-0 btn-lg mb-4" data-toggle="modal" data-target="#form">HIRE
+                    ME</button>
             </div>
         </div>
     </footer>
 
     <div class="modal fade" tabindex="-1" id="form" role="dialog" aria-labelledby="form" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title mr-5">Hire Me</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title mr-5">Hire Me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="modal-form">
+                        <input class="form-item form-control" type="text" name="name" id="name" placeholder="Your Name">
+                        <input class="form-item form-control" type="email" name="email" id="email"
+                            placeholder="Your Email">
+                        <textarea class="form-item form-control" name="message" id="message" cols="30" rows="7"
+                            placeholder="Your Message"></textarea>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg text-white">SEND MESSAGE</button>
+                </div>
             </div>
-            <div class="modal-body">
-              <form class="modal-form">
-                 <input class="form-item form-control" type="text" name="name" id="name" placeholder="Your Name">
-                 <input class="form-item form-control" type="email" name="email" id="email" placeholder="Your Email">
-                 <textarea class="form-item form-control" name="message" id="message" cols="30" rows="7" placeholder="Your Message"></textarea>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary btn-lg text-white">SEND MESSAGE</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
 
 
-     <script>
-         $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-     </script> 
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
