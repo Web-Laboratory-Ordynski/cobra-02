@@ -178,3 +178,6 @@ textarea::-webkit-input-placeholder {
   .p-5,
   .p-4 {
     padding: 10px !important; } }
+
+.non-visable {
+  display: none; }

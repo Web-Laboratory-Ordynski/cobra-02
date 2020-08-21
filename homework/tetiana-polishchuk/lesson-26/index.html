@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <header class="header p-2">
+    <header class="header p-2" id="header">
         <div class="container">
             <div class=" col-10 col-md-6 d-flex m-auto justify-content-between">
                 <p class="text-white p-1 m-0">This site uses cookies, so that my service can work better. </p>
-                <button type="button" class="btn btn-light p-0">Accept</button>
+                <button type="button" class="btn btn-light p-0" onclick="hide()">Accept</button>
             </div>
         </div>
     </header>
@@ -33,7 +33,7 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
                     <button type="button" class="btn btn-light p-0 btn-lg mb-4" data-toggle="modal"
                         data-target="#form">HIRE ME</button>
-                    <div class="welcome-arrow text-center pb-2"><a class="text-white" href="#about"><svg
+                    <div class="welcome-arrow text-center pb-5"><a class="text-white" href="#about"><svg
                                 class="welcome-svg">
                                 <use xlink:href="sprite.svg#arrow"></use>
                             </svg></a></div>
@@ -199,9 +199,10 @@
 
 
     <script>
-        $('#myModal').on('shown.bs.modal', function () {
-            $('#myInput').trigger('focus')
-        })
+        function hide() {
+            document.getElementById('header').classList.add('non-visable');
+
+        }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
