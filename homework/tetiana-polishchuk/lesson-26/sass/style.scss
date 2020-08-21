@@ -156,7 +156,8 @@ img {
 }
 
 .modal-dialog {
-    width: 600px;
+    width: auto;
+    max-width: 500px;
 }
 .modal-title {
     margin: auto;
