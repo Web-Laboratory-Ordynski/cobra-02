@@ -17,7 +17,6 @@
             "%c 🐶 DOGS APP STARTED!",
             "color: green; font-weight: bold;"
         );
-        var dogId;
 
         var apiPromise = superagent.get("https://api.thedogapi.com/v1/breeds");
         apiPromise
@@ -48,11 +47,12 @@
                     .filter(function (doggy) {
                         return doggy['name'].toLowerCase() == neededDog.toLowerCase();
                     });
-                dogId = dogsArray[0].id;
+                var dogId = dogsArray[0].id;
+                return dogId;
 
             })
-            .then(function () {
-                superagent.get(`https://api.thedogapi.com/v1/images/search?include_breed=1&breed_id=${dogId}`)
+            .then(function (res) {
+                superagent.get(`https://api.thedogapi.com/v1/images/search?include_breed=1&breed_id=${res}`)
                     .then(function (res) {
                         var dogInfo = res.body[0];
                         var result = [];
