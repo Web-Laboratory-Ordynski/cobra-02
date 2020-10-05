@@ -51,8 +51,8 @@
                 return dogId;
 
             })
-            .then(function (res) {
-                superagent.get(`https://api.thedogapi.com/v1/images/search?include_breed=1&breed_id=${res}`)
+            .then(function (dogId) {
+                superagent.get(`https://api.thedogapi.com/v1/images/search?include_breed=1&breed_id=${dogId}`)
                     .then(function (res) {
                         var dogInfo = res.body[0];
                         var result = [];
