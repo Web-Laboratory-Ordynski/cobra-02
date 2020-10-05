@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐶 DOGS API 🐶</title>
+</head>
+
+<body>
+    <!-- https://github.com/visionmedia/superagent -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/4.1.0/superagent.min.js"
+        integrity="sha512-LJaxxgpiq7SihGQ21nejROsll6FRrgbs0Wxtgqb5x+Q0CJICA3vt8hlBxSD8NLsO+Yabgg3B7ARexiijKiojGg=="
+        crossorigin="anonymous"></script>
+    <script>
+        console.log(
+            "%c 🐶 DOGS APP STARTED!",
+            "color: green; font-weight: bold;"
+        );
+        var dogId;
+
+        var apiPromise = superagent.get("https://api.thedogapi.com/v1/breeds");
+        apiPromise
+            .then(function (res) {
+                var dogsString = res.body
+                    .map(function (dog) {
+                        return dog.name;
+                    }).reduce(function (acc, currName) {
+                        var repeatedNames = acc.filter(function (breedName) {
+                            return breedName.charAt(0) === currName.charAt(0)
+                        })
+
+                        if (repeatedNames.length >= 2) {
+                            return acc
+                        } else {
+                            return acc.concat(currName)
+                        }
+                    }, [])
+                    .join("\n");
+
+
+                console.log("dogsString: ", dogsString);
+                alert(dogsString); // (1)
+
+                var neededDog = prompt('What breed do you need?');
+
+                var dogsArray = res.body
+                    .filter(function (doggy) {
+                        return doggy['name'].toLowerCase() == neededDog.toLowerCase();
+                    });
+                dogId = dogsArray[0].id;
+
+            })
+            .then(function () {
+                superagent.get(`https://api.thedogapi.com/v1/images/search?include_breed=1&breed_id=${dogId}`)
+                    .then(function (res) {
+                        var dogInfo = res.body[0];
+                        var result = [];
+
+                        dogInfo.breeds = JSON.stringify(dogInfo.breeds);
+                        for (const [key, value] of Object.entries(dogInfo)) {
+                            result += (`${key}: ${value} ,`);
+                        }
+                        result = result.split(',').join("\n")
+                        alert(result);
+                        console.log(
+                            "%c 🐶 SYNC CODE FINISHED!",
+                            "color: green; font-weight: bold;"
+                        );
+                    })
+            })
+    </script>
+</body>
+
+</html>
