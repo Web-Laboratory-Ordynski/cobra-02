@@ -1,0 +1,281 @@
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+
+	src: local(''),
+		url('../fonts/raleway-v16-latin-300.woff2') format('woff2'),
+		url('../fonts/raleway-v16-latin-300.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+
+	src: local(''),
+		url('../fonts/raleway-v16-latin-700.woff2') format('woff2'),
+		url('../fonts/raleway-v16-latin-700.woff') format('woff');
+}
+
+body {
+	width: auto;
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Raleway', 'Arial', sans-serif;
+	font-weight: 300;
+
+	overflow-x: hidden;
+}
+
+a {
+	display: block;
+
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.page-main__wrapper {
+	padding: 6.75rem 0 6.5625rem 0;
+}
+
+.cards {
+
+	&__intro {
+		display: block;
+		margin: 0;
+
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 35px;
+
+		font-size: 60px;
+		line-height: 66px;
+		color: #ffcc00;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	&__line {
+		position: relative;
+		margin-bottom: 2.8125rem;
+
+		&::before {
+			content: " ";
+			position: absolute;
+			top: 7px;
+			left: 340px;
+
+			width: 215px;
+			height: 1px;
+
+			background-color: #ffcc00;
+		}
+
+		&::after {
+			content: " ";
+			position: absolute;
+			top: 7px;
+			right: 340px;
+
+			width: 215px;
+			height: 1px;
+
+			background-color: #ffcc00;
+		}
+	}
+
+	&__fire {
+		margin: 0 auto;
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+	}
+
+	&__item {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	&__wrap {
+		width: 388px;
+		height: 388px;
+		padding: 15px 15px 15px 15px;
+		margin-left: 60px;
+		margin-top: 65px;
+
+		background-image:
+			linear-gradient(to right, #ffcc00 100px, transparent 100px, transparent 310px, #ffcc00 288px),
+			linear-gradient(to right, #ffcc00 100px, transparent 100px, transparent 310px, #ffcc00 288px),
+			linear-gradient(to bottom, #ffcc00 100px, transparent 100px, transparent 310px, #ffcc00 288px),
+			linear-gradient(to bottom, #ffcc00 100px, transparent 100px, transparent 310px, #ffcc00 288px);
+		background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+		background-position: 0 0, 0 100%, 0 0, 100% 0;
+		background-repeat: no-repeat;
+	}
+
+	&__image {
+		border: 1px solid #ffcc00;
+	}
+
+	&__straight {
+		width: 1px;
+		height: 560px;
+		margin-left: 5.75rem;
+
+		background-color: #ffcc00;
+	}
+
+	&__info {
+		margin-top: 5.3125rem;
+		margin-left: 5.625rem;
+	}
+
+	&__employee {
+		position: relative;
+
+		margin: 0;
+		margin-bottom: 3.125rem;
+
+		font-size: 36px;
+		text-align: center;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 4.0625rem;
+			right: 10.3125rem;
+
+			width: 95px;
+			height: 1px;
+
+			background-color: #ffcc00;
+		}
+	}
+
+	&__direction {
+		display: block;
+		margin-bottom: 24px;
+
+		font-size: 24px;
+		line-height: 36px;
+		text-align: center;
+	}
+
+	&__social {
+		display: flex;
+		justify-content: space-between;
+
+		width: 135px;
+		margin: 0 auto;
+		margin-bottom: 1.5625rem;
+		padding: 0;
+
+		list-style: none;
+	}
+
+	&__icon {
+		&:hover {
+			opacity: 0.8;
+		}
+
+		&:focus,
+		&:active {
+			opacity: 0.4;
+		}
+	}
+
+	&__description {
+		margin: 0;
+		margin-bottom: 15px;
+
+		font-size: 14px;
+		line-height: 24px;
+		text-align: center;
+	}
+
+	&__dotted {
+		position: relative;
+
+		width: 20px;
+		height: 5px;
+		margin: 0 auto;
+		margin-bottom: 1.5625rem;
+
+		background-color: #ffcc00;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 1.5625rem;
+
+			width: 10px;
+			height: 5px;
+
+			background-color: #ffcc00;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 1.5625rem;
+
+			width: 10px;
+			height: 5px;
+
+			background-color: #ffcc00;
+		}
+	}
+
+	&__button {
+		width: 120px;
+		margin: 0 auto;
+		padding: 1px 0 1px 0;
+		box-sizing: border-box;
+
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 24px;
+		color: #666666;
+		text-transform: uppercase;
+		text-align: center;
+
+		border: 1px solid #ffcc00;
+
+		&:hover {
+			color: #ff6033;
+		}
+
+		&:focus,
+		&:active {
+			color: #d2d2d2;
+		}
+	}
+}
