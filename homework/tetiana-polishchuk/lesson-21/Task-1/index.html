@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cahee</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <a name="home"></a>
+            <div class="menu">
+                <div class="menu__logo main-logo">
+                    Cahee
+                </div>
+                <div class="menu__navigation">
+                    <nav class="topnav" id="myTopnav">
+                        <a class="active" href="#home">home</a>
+                        <a  href="#about">about</a>
+                        <a  href="#services">services</a>
+                        <a  href="#gallery">gallery</a>
+                        <a  href="#diary">blog</a>
+                        <a  href="#contact">contact</a>
+                         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="blog__item main-block">
+                    <div class="main-block__title">Fresh Life</div>
+                    <div class="main-block__description">Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</div>
+                    <div class="main-block__button"> <button class="button">GET FREE NOW</button></div>
+                </div>
+            </div>
+            <div class="blog__item about-us">
+                <a name="about"></a>
+                <div class="about-us__image"><img class="about-us__img" src="images/background2.png">
+                </div>
+                <div class="about-us__column column">
+                    <div class="column__title title title--white">About Us</div>
+                    <div class="column__description">
+                        <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit
+                            esse cillum.
+                        </p>
+                        <p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                            accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
+                    </div>
+                </div>
+            </div>
+            <a name="services"></a>
+            <div class="blog__item our-services">
+                <div class="our-services__services services">
+                    <div class="services-item">
+                        <div class="item-title">Online Shopping</div>
+                        <div class="item-image"><svg>
+                                <use xlink:href="sprite.svg#shop" /></svg></div>
+                    </div>
+                    <div class="services-item">
+                        <div class="item-title">Quality Product</div>
+                        <div class="item-image"><svg>
+                                <use xlink:href="sprite.svg#hand" /></svg></div>
+                    </div>
+                    <div class="services-item">
+                        <div class="item-title">Domestic & International Delivery</div>
+                        <div class="item-image"><img src="./images/earth2.png" alt="earth2"></div>
+                    </div>
+                    <div class="services-item">
+                        <div class="item-title">Well Organized</div>
+                        <div class="item-image"><img src="./images/carrot2.png" alt="carrot2"></div>
+                    </div>
+                </div>
+                <div class="our-services__picture picture">
+                    <div class="picture__image"><img class="picture-img" src="./images/tomatoes.png" alt="tomatoes">
+                    </div>
+                    <div class="picture__title title title--white ">Our Services</div>
+                </div>
+            </div>
+            <div class="blog__item gallery">
+                <a name="gallery"></a>
+                <div class="gallery__title title">Gallery</div>
+                <div class="gallery__description description">Consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                <div class="gallery__pictures pictures">
+                    <div class="pictures__main"><img class="pictures__img" src="./images/1.png" /></div>
+                    <div class="pictures__small"><img class="pictures__img" src="./images/2.png" /></div>
+                    <div class="pictures__small2"><img class="pictures__img" src="./images/3.png" /></div>
+                    <div class="pictures__middle"><img class="pictures__img" src="./images/4.png" /></div>
+                    <div class="pictures__middle2"><img class="pictures__img" src="./images/5.png" /></div>
+                </div>
+                <div class="gallery__button">
+                    <button class="button button--grey">View More</button>
+                </div>
+            </div>
+            <div class="blog__item subscribe">
+                <a name="subscribe"></a>
+                <div class="subscribe__mini-title mini-title">Subscribe To Us</div>
+                <div class="subscribe__text text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                <div class="subscribe__form">
+                    <form action="#" method="POST">
+                        <input class="form__input" type="email" name="email" placeholder="Your email adress..." />
+                        <button class="button button--green">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog__item diary">
+                <a name="diary"></a>
+                <div class="diary__title title title--white">Blog</div>
+                <div class="diary__inform inform">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation
+                    ullamco laboris nisi ut aliquip ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</div>
+                <div class="diary__main main-div">
+                    <div class="main-div__item item item--first">
+                        <div class="cover">
+                            <!-- div for linear gradient as background -->
+                            <div class="item__date1">
+                                <!-- div for date box --><span>20</span>
+                                <span class="item__second-span">nov</span></div>
+                            <div class="item__big-text">Green Smoothies: Too Much of a Good Thing?</div>
+                            <div class="item__small-text">By Auskteez - 2 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="main-div__item item item--second">
+                        <div class="cover">
+                            <!-- div for linear gradient as background -->
+                            <div class="item__date1">
+                                <!-- div for date box --><span>14</span>
+                                <span class="item__second-span">nov</span></div>
+                            <div class="item__big-text">Growing Food and a “Thirst” for Innovation</div>
+                            <div class="item__small-text">By Auskteez - 3 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="main-div__item item item--third">
+                        <div class="cover">
+                            <!-- div for linear gradient as background -->
+                            <div class="item__date1">
+                                <!-- div for date box -->
+                                <span>10</span>
+                                <span class="item__second-span">nov</span></div>
+                            <div class="item__big-text">Pesticides & Food: What You Need to Know</div>
+                            <div class="item__small-text">By Auskteez - 6 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="diary__button"><button class="button">view more</button></div>
+            </div>
+            <a name="contact"></a>
+            <div class="blog__item contact">
+                <div class="contact__title title">Contact</div>
+                <div class="contact__desc desc">For new projects, ideas, business or anything
+                    you'd like to discuss, contact with me!</div>
+                <div class="contact__content content">
+                    <div class="content__form form">
+                        <form action="#" method="GET">
+                            <div class="form__inputs inputs">
+                                <input class="inputs__item" minlength="3" type="text" name="Username" id="Username"
+                                    placeholder="Your name...">
+                                <input class="inputs__item" minlength="3" type="text" name="Email" id="Email"
+                                    placeholder="Your email...">
+                                <input class="inputs__item" minlength="3" type="text" name="Phone" id="Phone"
+                                    placeholder="Your phone number...">
+                                <textarea class="inputs__textarea" type="text" name="Message" id="Message"
+                                    placeholder="Your message..."></textarea>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact__contacts contacts">
+                        <div class="contacts__title">ADDRESS</div>
+                        <div class="contacts__description">123 City name, Street, City, Country</div>
+                        <div class="contacts__title">EMAIL</div>
+                        <div class="contacts__description">cahee@domain.com</div>
+                        <div class="contacts__title">PHONE</div>
+                        <div class="contacts__description">+012 345 6789</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__footer footer">
+                <div class="footer__copyright">&copy; 2015 Company. All right reserved.</div>
+                <div class="footer__logo">Cahee</div>
+                <div class="footer__author">Made with <span class="author__link">love</span> by Auskteez</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+        
+</body>
+
+</html>
