@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Hans-Kendrick';
+    src: url(./fonts/NeueHansKendrick-Regular.woff) format('woff'), url(./fonts/NeueHansKendrick-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1600px;
+    height: 1400px;
+    background-color: #E2E7EC;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 90px 240px;
+}
+
+.main-article {
+    width: calc(66.5% - 10px);
+    height: 540px;
+    background: linear-gradient( rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6)), url('./images/Layer\ 8@1X.png');
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: 5px 5px 10px 5px;
+}
+
+.main-article:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.article {
+    width: calc(33% - 10px);
+    height: 540px;
+    background-color: white;
+    overflow: hidden;
+    margin: 5px 5px 10px 5px;
+}
+
+.article:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.main-article__date {
+    padding: 405px 0 20px 30px;
+    font-family: 'Hans-Kendrick';
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.main-article__title {
+    padding: 0 265px 20px 30px;
+    font-family: 'Hans-Kendrick';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.article__image {
+    padding-bottom: 20px;
+}
+
+.article__date {
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-family: 'Hans-Kendrick';
+    font-size: 13px;
+    color: #818181;
+}
+
+.article__title {
+    padding: 0 30px 70px 30px;
+    font-family: 'Hans-Kendrick';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.article__author {
+    padding-left: 30px;
+}

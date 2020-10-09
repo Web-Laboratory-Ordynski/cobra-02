@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Miso';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Miso'), url('fonts/miso.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: lighter;
+    src: local('Lato Light', "LatoLight"), url('fonts/LatoLight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Miso';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Miso Bold'), url('fonts/miso-bold.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+div {
+    display: flex;
+    font-family: 'Miso', sans-serif;
+    font-weight: normal;
+}
+
+.plans {
+    background: #fdde7e;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.plans__container {
+    max-width: 1200px;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plan {
+    margin: 0 15px;
+    width: 33%;
+    min-height: 450px;
+    padding: 40px 100px;
+    background: #ffffff;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.plan--popular {
+    min-height: 500px;
+}
+
+.plan__container {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan__price {
+    font-size: 70px;
+    font-weight: bold;
+    color: #02995b;
+    justify-content: center;
+}
+
+.plan_img-container {
+    position: relative;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.plan__img {
+    justify-content: center;
+}
+
+.plan__img-decor {
+    position: absolute;
+    top: 20%;
+    margin-left: -20px;
+    margin-left: -11%;
+    transition: 1s;
+}
+
+.plan:hover .plan__img-decor:not(.plan__img-decor--top) {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+.plan:hover .plan__img-decor--top {
+    transform: skew(10deg, 40deg);
+    transition: 2.5s;
+}
+
+.plan__img-decor--top {
+    top: -70%;
+}
+
+.plan__title {
+    font-size: 56px;
+    line-height: 24px;
+    color: #333333;
+    justify-content: center;
+}
+
+.plan__descr {
+    font-family: 'Lato';
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+    justify-content: center;
+}
+
+@media (max-width: 1199px) {
+    .plan {
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 599px) {
+    .plans__container {
+        flex-direction: column;
+    }
+    .plan {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .plan--popular {
+        width: 115%;
+    }
+}

@@ -7,22 +7,47 @@
     <title>Homework-06</title>
 
     <style>
+        /* body {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        } */
+        
         header {
             text-align: center;
         }
         
         .work-block {
-            display: inline-block;
+            display: flex;
             width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
             font-size: 0;
         }
         
+        .work__hw {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
         .work {
-            display: inline-block;
-            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
             font-size: 18px;
             text-align: center;
+            justify-content: center;
             margin: 0 auto 20px;
+            flex-direction: column;
+        }
+        
+        h2 {
+            display: inline-block;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
         }
         
         a {
@@ -41,6 +66,11 @@
         a:focus {
             color: red;
         }
+        
+        hr {
+            width: 100%;
+            height: 1px;
+        }
     </style>
 </head>
 
@@ -49,113 +79,127 @@
         <h1>My Homeworks</h1>
     </header>
 
-    <section>
-        <div class="work-block">
-            <div class="work">
-                <h2>Homework 4 <small>Simple</small></h2>
-                <a href="hw4_css/01_simple/index.html">Look in git repo</a>
-                <a href="">Look at gh-pages</a>
-            </div>
-            <div class="work"></div>
-            <h2>Homework 4 <small>Hard</small></h2>
-            <a href="hw4_css/02_hard/index.html">Look in git repo</a>
-            <a href="">Look at gh-pages</a>
-        </div>
-    </section>
-        <h1 style="text-align: center;">My Homeworks</h1>
-    </header>
-
     <div class="work-block">
         <div class="work">
             <h2>Homework 4 <small>(simple)</small></h2>
-            <a href="hw4_css/01_simple/index.html">Look in git repo</a>
-
-            <a href="hw4_css/01_simple/index.html">Look at git repo</a>
-
-            <a href="javascript:void(0);" title="Sorry, this link is temporary inavailable">Look at gh-pages</a>
+            <a href="hw04_css/01_simple/index.html">Look at git</a>
+            <a href="hw04_css/01_simple/" title="">Look at gh-pages</a>
         </div>
         <div class="work">
             <h2>Homework 4 <small>(hard)</small></h2>
-
-            <a href="hw4_css/02_hard/index.html">Look in git repo</a>
-
-            <a href="hw4_css/02_hard/index.html">Look at git repo</a>
-
-            <a href="javascript:void(0);" title="Sorry, this link is temporary inavailable">Look at gh-pages</a>
+            <a href="hw04_css/02_hard/index.html">Look in git repo</a>
+            <a href="hw04_css/02_hard/" title="">Look at gh-pages</a>
         </div>
-
         <hr>
 
         <div class="work">
             <h2>Homework 5 <small>(simple)</small></h2>
-
-            <a href="hw5_PS/01_simple/index.html">Look in git repo</a>
-
-            <a href="hw5_PS/01_simple/index.html">Look at git repo</a>
-
-            <a href="javascript:void(0);" title="Sorry, this link is temporary inavailable">Look at gh-pages</a>
+            <a href="hw05_PS/01_simple/index.html">Look at git repo</a>
+            <a href="hw05_PS/01_simple/" title="">Look at gh-pages</a>
         </div>
         <div class="work">
             <h2>Homework 5 <small>(hard)</small></h2>
-
-            <a href="hw5_PS/02_hard/index.html">Look in git repo</a>
-            <a href="javascript:void(0);" title="Sorry, this link is temporary inavailable">Look at gh-pages</a>
+            <a href="hw05_PS/02_hard/index.html">Look in git repo</a>
+            <a href="hw05_PS/02_hard/" title="">Look at gh-pages</a>
         </div>
-        <hr>
-        <div class="work">
-            <h2>Homework 6 <small>(simple)</small></h2>
-            <a href="hw6_css-selectors/simple/index.html">Look in git repo</a>
-
-            <a href="hw5_PS/02_hard/index.html">Look at git repo</a>
-            <a href="javascript:void(0);" title="Sorry, this link is temporary inavailable">Look at gh-pages</a>
-        </div>
-
         <hr>
 
         <div class="work">
             <h2>Homework 6 <small>(simple)</small></h2>
-            <a href="hw6_css-selectors/simple/index.html">Look at git repo</a>
-
-            <a href="javascript:void(0);" title="Sorry, this link is temporary inavailable">Look at gh-pages</a>
+            <a href="hw06_css-selectors/simple/index.html">Look at git repo</a>
+            <a href="hw06_css-selectors/simple/" title="">Look at gh-pages</a>
         </div>
         <div class="work">
             <h2>Homework 6 <small>(hard)</small></h2>
-
-            <a href="hw6_css-selectors/hard/index.html">Look in git repo</a>
-
-            <a href="hw6_css-selectors/hard/index.html">Look at git repo</a>
-            <a href="javascript:void(0);" title="Sorry, this link is temporary inavailable">Look at gh-pages</a>
+            <a href="hw06_css-selectors/hard/index.html">Look at git repo</a>
+            <a href="hw06_css-selectors/hard/" title="">Look at gh-pages</a>
         </div>
-
         <hr>
 
         <div class="work">
             <h2>Homework 7 <small>(simple)</small></h2>
-            <a href="hw7_css-box/01-simple/index.html">Look at git repo</a>
-            <a href="javascript:void(0);" title="Sorry, this link is temporary inavailable">Look at gh-pages</a>
+            <a href="hw07_css-box/01-simple/index.html">Look at git repo</a>
+            <a href="hw07_css-box/01-Simple/" title="">Look at gh-pages</a>
         </div>
         <div class="work">
             <h2>Homework 7 <small>(hard)</small></h2>
-            <a href="hw7_css-box/02-hard/index.html">Look at git repo</a>
-            <a href="javascript:void(0);" title="Sorry, this link is temporary inavailable">Look at gh-pages</a>
+            <a href="hw07_css-box/02-hard/index.html">Look at git repo</a>
+            <a href="hw07_css-box/02-Hard/" title="">Look at gh-pages</a>
         </div>
-
         <hr>
 
         <div class="work">
             <h2>Homework 8 <small>(simple)</small></h2>
             <a href="hw08_css-pos/01-simple/index.html">Look at git repo</a>
-            <a href="javascript:void(0);" title="Sorry, this link is temporary inavailable">Look at gh-pages</a>
+            <a href="hw08_css-pos/01-simple/" title="">Look at gh-pages</a>
         </div>
         <div class="work">
             <h2>Homework 8 <small>(hard)</small></h2>
             <a href="hw08_css-pos/02-hard/index.html">Look at git repo</a>
-
-            <a href="javascript:void(0);" title="Sorry, this link is temporary inavailable">Look at gh-pages</a>
+            <a href="hw08_css-pos/02-hard/" title="">Look at gh-pages</a>
         </div>
+        <hr>
+
+        <div class="work">
+            <h2>Homework 9 <small>(simple)</small></h2>
+            <a href="hw09_fonts/01-simple/index.html">Look at git repo</a>
+            <a href="hw09_fonts/01-simple/" title="">Look at gh-pages</a>
+        </div>
+        <div class="work">
+            <h2>Homework 9 <small>(hard)</small></h2>
+            <a href="hw09_fonts/02-hard/index.html">Look at git repo</a>
+            <a href="hw09_fonts/02-hard/" title="">Look at gh-pages</a>
+        </div>
+        <hr>
+
+        <div class="work">
+            <h2>Homework 10 <small>(simple)</small></h2>
+            <a href="hw10_bem/01-simple/index.html">Look at git repo</a>
+            <a href="hw10_bem/01-simple/" title="">Look at gh-pages</a>
+        </div>
+        <div class="work">
+            <h2>Homework 10 <small>(hard)</small></h2>
+            <a href="hw10_bem/02-hard/index.html">Look at git repo</a>
+            <a href="hw10_bem/02-hard/" title="">Look at gh-pages</a>
+        </div>
+        <hr>
+
+        <div class="work">
+            <h2>Homework 11 <small>(simple)</small></h2>
+            <a href="hw11_flexbox/01-simple/index.html">Look at git repo</a>
+            <a href="hw11_flexbox/01-simple/" title="">Look at gh-pages</a>
+        </div>
+        <div class="work">
+            <h2>Homework 11 <small>(hard)</small></h2>
+            <a href="hw11_flexbox/02-hard/index.html">Look at git repo</a>
+            <a href="hw11_flexbox/02-hard/" title="">Look at gh-pages</a>
+        </div>
+        <hr>
+
+        <div class="work">
+            <h2>Homework 12 <small>(simple)</small></h2>
+            <a href="hw12_forms/01-simple/index.html">Look at git repo</a>
+            <a href="hw12_forms/01-simple/" title="">Look at gh-pages</a>
+        </div>
+        <div class="work">
+            <h2>Homework 12 <small>(hard)</small></h2>
+            <a href="hw12_forms/02-hard/index.html">Look at git repo</a>
+            <a href="hw12_forms/02-hard" title="">Look at gh-pages</a>
+        </div>
+        <hr>
+
+        <div class="work">
+            <h2>Homework 13 <small>(simple)</small></h2>
+            <a href="hw13_grid/01-simple/index.html">Look at git repo</a>
+            <a href="hw13_grid/01-simple/" title="">Look at gh-pages</a>
+        </div>
+        <div class="work">
+            <h2>Homework 13 <small>(hard)</small></h2>
+            <a href="hw13_grid/02-hard/index.html">Look at git repo</a>
+            <a href="hw13_grid/02-hard/" title="">Look at gh-pages</a>
+        </div>
+        <hr>
     </div>
-
-
     <footer></footer>
 </body>
 

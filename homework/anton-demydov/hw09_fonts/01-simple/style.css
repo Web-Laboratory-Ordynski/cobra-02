@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    font-display: swap;
+    src: url('./fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'), url('./fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.woff') format('woff'), url('./fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.ttf') format('truetype'), url('./fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-display: swap;
+    src: url('./fonts/LatoLight/LatoLight.eot?#iefix') format('embedded-opentype'), url('./fonts/LatoLight/LatoLight.woff') format('woff'), url('./fonts/LatoLight/LatoLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    font-display: swap;
+    src: url('./fonts/LatoBold/LatoBold.eot?#iefix') format('embedded-opentype'), url('./fonts/LatoBold/LatoBold.woff') format('woff'), url('./fonts/LatoBold/LatoBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #171717;
+}
+
+article {
+    margin: 100px auto;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
+    box-shadow: 0 4px 68px #00000033;
+    padding: 120px;
+}
+
+h1 {
+    font-family: "PlayfairDisplay", serif;
+    font-size: 2.625rem;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.big {
+    display: block;
+    float: left;
+    font-family: "PlayfairDisplay", serif;
+    font-size: 6.875rem;
+    line-height: 0.8;
+    margin-right: 30px;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 2.25rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+blockquote {
+    font-size: 1.5rem;
+    margin-top: -30px;
+    margin-bottom: 15px;
+}
+
+span {
+    font-size: 3.75rem;
+    margin-right: 30px;
+}
+
+.button {
+    display: block;
+    width: 264px;
+    font-weight: 700;
+    color: #eaa258;
+    padding: 22px 0;
+    border: 2px solid #eaa258;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 20px 0;
+    letter-spacing: 4px;
+}
+
+@media (max-width: 599px) {
+    .wrapper {
+        width: 100%;
+        padding: 70px 20px;
+    }
+}

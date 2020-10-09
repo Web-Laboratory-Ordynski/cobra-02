@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <title>Task-2</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="card-container card">
+            <div class="card__logo">
+                <img src="./images/logo.png" alt="logo" class="logo__img">
+            </div>
+            <div class="card__img">
+                <div class="img__item"><img src="./images/Nike-SB-Stefan-Janoski-Max.png" alt="Nike"></div>
+                <div class="img__item"><img src="./images/Nike-SB-Stefan-Janoski-Max.png" alt="Nike"></div>
+                <div class="img__item"><img src="./images/Nike-SB-Stefan-Janoski-Max.png" alt="Nike"></div>
+                <div class="img__item"><img src="./images/Nike-SB-Stefan-Janoski-Max.png" alt="Nike"></div>
+            </div>
+            <div class="card__description text">
+                <div class="text__title">Nike SB Stefan
+                    Janoski Max</div>
+                <div class="text__information">
+                    <p class="information__paragraph">Unisex Skateboarding Shoe (Men's Sizing)</p>
+                    <p class="information__images">
+                        <img src="./images/Vector_Smart_Object.png" alt="star" class="images__stars">
+                        <img src="./images/Vector_Smart_Object.png" alt="star" class="images__stars">
+                        <img src="./images/Vector_Smart_Object.png" alt="star" class="images__stars">
+                        <img src="./images/Vector_Smart_Object_copy_3.png" alt="star" class="images__stars">
+                        <img src="./images/Vector_Smart_Object_copy_3.png" alt="star" class="images__stars">
+                    </p>
+                </div>
+                <div class="text__select">
+                    <select class="select__select">
+                        <option value="0">Size</option>
+                        <option value="1">36</option>
+                        <option value="2">37</option>
+                        <option value="3">38</option>
+                        <option value="4">39</option>
+                        <option value="5">40</option>
+                    </select>
+                    <select class="select__select">
+                        <option value="0">Qty</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="text__button">
+                    <button class="button__btn">Add to cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.card__img').slick()
+        });
+    </script>
+</body>
+
+</html>
