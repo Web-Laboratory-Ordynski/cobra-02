@@ -11,6 +11,8 @@ breedPromise.then(function(res) {
     let result = dogInfo.breeds[0];
     result = result.split(',').join('\n').split('"').join(' ');
     result = result.slice(1, result.length - 1);
+
+
     let container = document.getElementById('container');
     let paragraph = document.getElementById('paragraph');
     let img = document.createElement('img');

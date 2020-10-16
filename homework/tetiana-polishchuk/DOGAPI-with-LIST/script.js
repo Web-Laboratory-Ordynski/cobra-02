@@ -27,6 +27,6 @@ apiPromise
             a.text = dogsString[i];
             li.appendChild(a);
             documentFragment.appendChild(li);
-            list.appendChild(documentFragment);
         }
+        list.appendChild(documentFragment);
     });
