@@ -15,10 +15,13 @@ breedPromise.then(function(res) {
 
     let container = document.getElementById('container');
     let paragraph = document.getElementById('paragraph');
+
     let img = document.createElement('img');
     img.src = dogInfo.url;
+
     let p = document.createElement('p');
     p.innerText = result;
+
     paragraph.appendChild(p);
     container.appendChild(img);
 })

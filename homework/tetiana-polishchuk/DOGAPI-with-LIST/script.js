@@ -1,12 +1,13 @@
 let apiPromise = superagent.get("https://api.thedogapi.com/v1/breeds");
 apiPromise
     .then(function(res) {
+        console.log(res);
         let dogsString = res.body
             .map(function(dog) {
-                return dog.name;
+                return dog;
             }).reduce(function(acc, currName) {
-                let repeatedNames = acc.filter(function(breedName) {
-                    return breedName.charAt(0) === currName.charAt(0);
+                let repeatedNames = acc.filter(function(breed) {
+                    return breed.name.charAt(0) === currName.name.charAt(0);
                 })
 
                 if (repeatedNames.length >= 2) {
@@ -23,8 +24,8 @@ apiPromise
         for (let i = 0; i < dogsLength; i++) {
             let li = document.createElement('li');
             let a = document.createElement('a');
-            a.href = `breed.html?breedId=${res.body[i].id}`;
-            a.text = dogsString[i];
+            a.href = `breed.html?breedId=${dogsString[i].id}`;
+            a.text = dogsString[i].name;
             li.appendChild(a);
             documentFragment.appendChild(li);
         }
