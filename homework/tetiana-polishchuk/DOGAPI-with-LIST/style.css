@@ -1,0 +1,14 @@
+li {
+    margin: 10px;
+    list-style-type: none;
+    background-color: rgb(177, 212, 253);
+    line-height: 2em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
