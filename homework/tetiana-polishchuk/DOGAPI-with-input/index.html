@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐶 DOGS API 🐶</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form class="form">
+            <input type="text" name="breed" id="breed" list="breed_data">
+            <datalist id="breed_data">
+            </datalist>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="container"> </div>
+
+    <!-- https://github.com/visionmedia/superagent -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/4.1.0/superagent.min.js" integrity="sha512-LJaxxgpiq7SihGQ21nejROsll6FRrgbs0Wxtgqb5x+Q0CJICA3vt8hlBxSD8NLsO+Yabgg3B7ARexiijKiojGg==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
