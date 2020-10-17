@@ -12,10 +12,7 @@ dogPromise.then(function(res) {
         option.value = elem.name;
         docFrag.appendChild(option);
     })
-
     breedData.appendChild(docFrag);
-
-
 })
 
 submit.addEventListener('click', function(event) {
@@ -31,21 +28,18 @@ submit.addEventListener('click', function(event) {
                     dogId = element['id'];
                 }
             });
-
             return dogId;
         })
         .then(function(dogId) {
             let breedPromise = superagent.get(`https://api.thedogapi.com/v1/images/search?include_breed=1&breed_id=${dogId}`);
             breedPromise
                 .then(function(res) {
-
                     let result = res.body[0];
                     let container = document.getElementById('container');
                     let documentFragment = document.createDocumentFragment();
 
                     document.getElementById("breed").value = '';
                     container.innerHTML = '';
-
 
                     let p = document.createElement('p');
                     p.innerText = `Name : ${result.breeds[0].name} \n
@@ -59,8 +53,6 @@ submit.addEventListener('click', function(event) {
                     documentFragment.appendChild(img);
 
                     container.appendChild(documentFragment);
-
                 })
-
         })
 })
